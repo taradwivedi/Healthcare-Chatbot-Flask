@@ -1,0 +1,94 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+      "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+      "context": [""]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+      "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+      "context": [""]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"],
+      "context": [""]
+    },
+    {
+      "tag": "general_question",
+      "patterns": ["Who are you?", "What are your capabilities?", "How can you assist me?"],
+      "responses": ["I'm a chatbot named Alice designed to provide healthcare information and assistance. I can help you with questions about symptoms, medication, finding healthcare services, and more."],
+      "context": [""]
+    },
+    {
+  "tag": "services_provided",
+  "patterns": ["What services do you provide?", "What can you help with?"],
+  "responses": ["I can help with the following services: 1. Cough, 2. Fever, 3. Stomach ache, 4. Headache"],
+  "context": [""]
+},
+
+    {
+      "tag": "noanswer",
+      "patterns": [],
+      "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+      "context": [""]
+    },
+      
+    {
+  "tag": "fever",
+  "patterns": ["I have a fever", "Fever", "My temperature is high"],
+  "responses": ["Fever can indicate an infection or illness. Make sure to rest, stay hydrated, and monitor your temperature. Consider taking fever-reducing medication like acetaminophen or ibuprofen. If your fever persists or is accompanied by other concerning symptoms, seek medical attention."],
+  "context": [""]
+},
+{
+  "tag": "headache",
+  "patterns": ["I have a headache", "Headache", "My head hurts"],
+  "responses": ["Headaches can be uncomfortable. Consider taking over-the-counter pain relievers like acetaminophen or ibuprofen. Resting in a quiet, dark room and staying hydrated may also help alleviate your symptoms."],
+  "context": [""]
+},
+{
+  "tag": "stomach_ache",
+  "patterns": ["I have a stomach ache", "Stomach ache", "My stomach hurts"],
+  "responses": ["It sounds like you have a stomach ache. I recommend resting, drinking ginger tea, and avoiding spicy or greasy foods. If your symptoms persist, consider consulting a healthcare professional. You can also try over-the-counter antacids or anti-nausea medication to alleviate stomach discomfort."],
+  "context": [""]
+},
+{
+  "tag": "medication_recommendation",
+  "patterns": ["What medication can I take for a headache?", "Recommendations for stomach ache medication", "Over-the-counter remedies for fever", "Medication options for cough relief"],
+  "responses": ["For headaches, consider taking acetaminophen or ibuprofen. Stomach aches may improve with antacids or anti-nausea medication. Fever-reducing medications like acetaminophen can help manage high temperatures. Cough suppressants like dextromethorphan or expectorants like guaifenesin can provide relief for cough symptoms."],
+  "context": [""]
+},
+
+    {
+  "tag": "cough",
+  "patterns": ["I have a cough", "Cough", "I can't stop coughing" ],
+  "responses": ["Coughs can be caused by various factors, including respiratory infections, allergies, or irritants. Consider using cough drops or syrup to soothe your throat and staying hydrated. If your cough persists or is accompanied by difficulty breathing or chest pain, consult a healthcare professional. You can also try over-the-counter cough suppressants like dextromethorphan or expectorants like guaifenesin to help manage cough symptoms."],
+  "context": [""]
+},
+
+    
+    {
+      "tag": "medical_advice",
+      "patterns": ["What should I do if my symptoms persist?", "General advice for managing symptoms", "When should I seek medical attention?"],
+      "responses": ["If your symptoms persist or worsen, it's important to consult a healthcare professional for proper evaluation and treatment. In the meantime, make sure to rest, stay hydrated, and avoid activities that exacerbate your symptoms."],
+      "context": [""]
+    },
+    
+    {
+      "tag": "hospital_search",
+      "patterns": ["Lookup for hospital", "Search for hospitals nearby", "Hospital lookup by name or location", "Looking up hospital details"],
+      "responses": ["Please provide the name or location of the hospital you're searching for."],
+      "context": ["search_hospital_by_params"]
+    },
+    {
+      "tag": "search_hospital_by_params",
+      "patterns": ["Pune", "Mumbai", "Noble"],
+      "responses": ["Searching for hospital details"],
+      "context": [""]
+    }
+  ]
+}
